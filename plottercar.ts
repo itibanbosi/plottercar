@@ -739,6 +739,7 @@ namespace eureka_plotter_car {
         eureka_plotter_car.plottercar_forward(Edge_Num)
         eureka_plotter_car.plottercar_L_cycle(360/digree_step)
      }
+    plottercar_frest()
     }
 
 }
