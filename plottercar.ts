@@ -16,14 +16,14 @@ let cond_degree=1;
 namespace eureka_plotter_car {
 
   //% color="#ffa800" weight=99　blockId=plotter_Distance
-  //% block="進行距離調整1/1000  短く進む |%Dis| 長く進む" group="1　調整"
+  //% block="進行距離調整(1→1/1000)  短く進む |%Dis| 長く進む" group="1　調整"
   //% Dis.min=-100 Dis.max=100
   export function plotter_Distance(Dis: number): void {
     cond_Distance = (1+Dis/1000);
   }
 
   //% color="#ffa800" weight=99　blockId=plotter_degree
-  //% block="回転角度調整1/1000  少なく回転 |%Deg| 多く回転" group="1　調整"
+  //% block="回転角度調整（1→1/1000）  少なく回転 |%Deg| 多く回転" group="1　調整"
   //% Deg.min=-100 Deg.max=100
   export function plotter_degree(Deg: number): void {
     cond_degree = (1+Deg/1000);
