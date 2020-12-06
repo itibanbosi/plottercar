@@ -7,20 +7,36 @@ enum plotter_houkou {
     前,
     後,
     }
-
-
+let cond_Distance=1;
+let cond_degree=1;
 
 
 //% color="#3943c6" block="ﾌﾟﾛｯﾀｰ・ｶｰVer0.95" icon="\uf1b9"
 
 namespace eureka_plotter_car {
+
+  //% color="#ffa800" weight=99　blockId=plotter_Distance
+  //% block="進行距離調整 短く進む |%Dis| 長く進む" group="1　調整"
+  //% Dis.min=-100 Dis.max=100
+  export function plotter_Distance(Dis: number): void {
+    cond_Distance = (1+Dis/100);
+  }
+
+  //% color="#ffa800" weight=99　blockId=plotter_degree
+  //% block="回転角度調整 少なく回転 |%Deg| 多く回転" group="1　調整"
+  //% Deg.min=-100 Deg.max=100
+  export function plotter_degree(Deg: number): void {
+    cond_degree = (1+Deg/100);
+  }
+
+
   //% color="#3943c6" weight=71　blockId=plottercar_forward
   //% block="前へ |%F_cm| ｃｍ進む" group="3　基本の動き"
 
   export function plottercar_forward(F_cm: number): void {
     led.enable(false);
     let i=0;
-    for (let index = 0; index < (F_cm / 18.9) * 512; index++) {
+    for (let index = 0; index < (F_cm / (18.9*cond_Distance) * 512); index++) {
 
 
       pins.digitalWritePin(DigitalPin.P3, 0);
@@ -123,7 +139,7 @@ namespace eureka_plotter_car {
   export function plottercar_back(F_cm: number): void {
     led.enable(false);
     let i=0;
-    for (let index = 0; index < (F_cm / 18.9) * 512; index++) {
+    for (let index = 0; index < (F_cm / (18.9*cond_Distance) * 512) ; index++) {
 
 
       pins.digitalWritePin(DigitalPin.P3, 1);
