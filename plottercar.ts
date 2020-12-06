@@ -22,11 +22,23 @@ namespace eureka_plotter_car {
     cond_Distance = (1+Dis/1000);
   }
 
-  //% color="#ffa800" weight=99　blockId=plotter_degree
+  //% color="#ffa800" weight=98　blockId=plotter_degree
   //% block="回転角度調整（1→1/1000）  少なく回転 |%Deg| 多く回転" group="1　調整"
   //% Deg.min=-20 Deg.max=20
   export function plotter_degree(Deg: number): void {
     cond_degree = (1+Deg/1000);
+  }
+
+  //% color="#009CA0" weight=96 blockId=eureka_relay block="ペン |%mode| " group="2_ペンの状態"
+  export function plottercar_pen(mode: pen_onoff) {
+    if (mode == pen_onoff.下げる) {
+      pins.servoWritePin(AnalogPin.P8, 0);
+      basic.pause(1000);
+    }
+    if (mode == pen_onoff.上げる) {
+      pins.servoWritePin(AnalogPin.P8, 90);
+      basic.pause(100);
+    }
   }
 
 
@@ -723,17 +735,6 @@ namespace eureka_plotter_car {
 
 
 
-  //% color="#009CA0" weight=90 blockId=eureka_relay block="ペン |%mode| " group="2_ペンの状態"
-  export function plottercar_pen(mode: pen_onoff) {
-    if (mode == pen_onoff.下げる) {
-      pins.servoWritePin(AnalogPin.P8, 0);
-      basic.pause(1000);
-    }
-    if (mode == pen_onoff.上げる) {
-      pins.servoWritePin(AnalogPin.P8, 90);
-      basic.pause(100);
-    }
-  }
 
 }
 
