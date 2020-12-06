@@ -732,7 +732,7 @@ namespace eureka_plotter_car {
   }
 
   //% color="#009A00" weight=40　blockId=polygon
-  //% block="多角形作図　角の数 |%digree_step|　一辺の長さ |%Edge_Num|" group="4　図形"
+  //% block="多角形作図　角の数 |%digree_step|　一辺の長さ |%Edge_Num| cm " group="4　図形"
   export function polygon(digree_step: number,Edge_Num:number): void {
 
     for (let index = 0; index < digree_step; index++) {
