@@ -20,7 +20,7 @@ let cond_degree=1;
 
 namespace eureka_plotter_car {
 
-  //% color="#ff3d03" weight=12 blockId=auto_led_off block="ﾏｲｸﾛﾋﾞｯﾄのLEDを |%Matrix_LED| にする"1　調整"
+  //% color="#ff3d03" weight=12 blockId=auto_led_off block="ﾏｲｸﾛﾋﾞｯﾄのLEDを |%Matrix_LED| にする group="1　調整"
   export function auto_led_off(Matrix_LED:onoff) {
     switch(Matrix_LED){
         case onoff.無効:
