@@ -742,5 +742,23 @@ namespace eureka_plotter_car {
     plottercar_frest()
     }
 
+
+  //% color="#009A00" weight=39　blockId=cycle
+  //% block="円の作図 直径 |%D_Num| cm " group="4　図形"
+  export function cycle(D_Num:number): void {
+    let cir = D_Num * 3.14
+    let Foward_D =  cir/ 60
+    for (let index = 0; index < 60; index++) {
+        eureka_plotter_car.plottercar_forward(Foward_D)
+        eureka_plotter_car.plottercar_R_cycle(360 / 60)
+    }
+}
+
+
+
+
+
+
+
 }
 
