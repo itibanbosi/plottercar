@@ -7,6 +7,11 @@ enum plotter_houkou {
     前,
     後,
     }
+enum onoff {
+  無効,
+  有効,
+}
+
 let cond_Distance=1;
 let cond_degree=1;
 
@@ -14,6 +19,17 @@ let cond_degree=1;
 //% color="#3943c6" block="ﾌﾟﾛｯﾀｰ・ｶｰVer0.97" icon="\uf1b9"
 
 namespace eureka_plotter_car {
+
+  //% color="#ff3d03" weight=12 blockId=auto_led_off block="ﾏｲｸﾛﾋﾞｯﾄのLEDを |%Matrix_LED| にする"1　調整"
+  export function auto_led_off(Matrix_LED:onoff) {
+    switch(Matrix_LED){
+        case onoff.無効:
+        led.enable(false);
+        break;
+        case onoff.有効:
+        led.enable(true);
+    }
+  }
 
   //% color="#ffa800" weight=99　blockId=plotter_Distance
   //% block="進行距離調整(1→1/1000)  短く進む |%Dis| 長く進む" group="1　調整"
