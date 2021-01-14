@@ -268,7 +268,7 @@ namespace eureka_plotter_car {
   //% block="左回り　角度 |%L_degree| " group="3　基本の動き"
 
   export function plottercar_L_cycle(L_degree: number): void {
-    for (let index = 0; index < (L_degree / 360) * 512 * 1.63*cond_degree; index++) {
+    for (let index = 0; index < (L_degree / 360) * 512 * 1.62*cond_degree; index++) {
     led.enable(false);
 
       let i = 0;
@@ -387,7 +387,7 @@ namespace eureka_plotter_car {
 
     let i = 0;
 
-    for (let index = 0; index < (R_degree / 360) * 512 * 1.63*cond_degree; index++) {
+    for (let index = 0; index < (R_degree / 360) * 512 * 1.62*cond_degree; index++) {
       for (i = 0; i < 1000; i++);
       {
       }
