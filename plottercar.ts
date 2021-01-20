@@ -787,7 +787,7 @@ namespace eureka_plotter_car {
       pins.digitalWritePin(DigitalPin.P15, 0);
       pins.digitalWritePin(DigitalPin.P7, 1);
       pins.digitalWritePin(DigitalPin.P16, 0);
-      for (i = 0; i < 1000; i++);
+      for (i = 0; i < 500; i++);
       {
       }
       pins.digitalWritePin(DigitalPin.P3, 0);
@@ -798,7 +798,7 @@ namespace eureka_plotter_car {
       pins.digitalWritePin(DigitalPin.P15, 0);
       pins.digitalWritePin(DigitalPin.P7, 0);
       pins.digitalWritePin(DigitalPin.P16, 0);
-      for (i = 0; i < 1000; i++);
+      for (i = 0; i < 500; i++);
       {
       }
       pins.digitalWritePin(DigitalPin.P3, 0);
@@ -809,7 +809,7 @@ namespace eureka_plotter_car {
       pins.digitalWritePin(DigitalPin.P15, 1);
       pins.digitalWritePin(DigitalPin.P7, 0);
       pins.digitalWritePin(DigitalPin.P16, 0);
-      for (i = 0; i < 1000; i++);
+      for (i = 0; i < 500; i++);
       {
       }
       pins.digitalWritePin(DigitalPin.P3, 1);
@@ -820,7 +820,7 @@ namespace eureka_plotter_car {
       pins.digitalWritePin(DigitalPin.P15, 0);
       pins.digitalWritePin(DigitalPin.P7, 0);
       pins.digitalWritePin(DigitalPin.P16, 1);
-      for (i = 0; i < 1000; i++);
+      for (i = 0; i < 500; i++);
       {
       }
     }
