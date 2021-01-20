@@ -839,13 +839,13 @@ namespace eureka_plotter_car {
     export function plottercar_houkou(muki: houkou): void {
         switch(muki){
             case houkou.右:
-                eureka_plotter_car.plottercar_L_cycle(90)
+                return eureka_plotter_car.plottercar_R_cycle(90)
             case houkou.左:
-                eureka_plotter_car.plottercar_L_cycle(90);
+                return eureka_plotter_car.plottercar_L_cycle(90);
             case houkou.ななめ右:
-                eureka_plotter_car.plottercar_R_cycle(45);
+                return eureka_plotter_car.plottercar_R_cycle(45);
             case houkou.ななめ左:
-                eureka_plotter_car.plottercar_L_cycle(45);
+                return eureka_plotter_car.plottercar_L_cycle(45);
         }
     }
 }
