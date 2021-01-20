@@ -834,6 +834,20 @@ namespace eureka_plotter_car {
       }
     }
   }
+  //% color="#3943c6" weight=30　blockId=plottercar_houkou
+  //% block="ほうこう |%muki| " group="3　基本の動き"
+    export function plottercar_houkou(muki: houkou): void {
+        switch(muki){
+            case houkou.右:
+                eureka_plotter_car.plottercar_L_cycle(90)
+            case houkou.左:
+                eureka_plotter_car.plottercar_L_cycle(90);
+            case houkou.ななめ右:
+                eureka_plotter_car.plottercar_R_cycle(45);
+            case houkou.ななめ左:
+                eureka_plotter_car.plottercar_L_cycle(45);
+        }
+    }
 }
 
 
