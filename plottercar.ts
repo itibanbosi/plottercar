@@ -834,7 +834,7 @@ namespace eureka_plotter_car {
       }
     }
   }
-  //% color="#3943c6" weight=30　blockId=plottercar_houkou
+  //% color="#3943c6" weight=28　blockId=plottercar_houkou
   //% block="ほうこうを変える |%muki| へ " group="3　基本の動き"
     export function plottercar_houkou(muki: houkou): void {
         switch(muki){
