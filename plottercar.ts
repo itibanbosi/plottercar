@@ -769,7 +769,8 @@ namespace eureka_plotter_car {
         eureka_plotter_car.plottercar_R_cycle(360 / 60)
     }
   }
-
+ //% color="#3943c6" weight=30　blockId=plottercar_forward
+  //% block="1相励起　前へ |%F_cm| ｃｍ進む" group="3　基本の動き"
 
 
   //% color="#3943c6" weight=30　blockId=plottercar_1sou_forward
@@ -825,3 +826,5 @@ namespace eureka_plotter_car {
     }
   }
 }
+
+
