@@ -12,6 +12,15 @@ enum onoff {
   有効,
 }
 
+enum houkou {
+    右,
+    左,
+    ななめ右,
+    ななめ左,
+}
+
+
+
 let cond_Distance=1;
 let cond_degree=1;
 
