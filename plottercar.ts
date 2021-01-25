@@ -160,7 +160,7 @@ namespace eureka_plotter_car {
       for (i = 0; i < 1000; i++);
       {
       }
-        pins.digitalWritePin(DigitalPin.P3, 0);
+      pins.digitalWritePin(DigitalPin.P3, 0);
       pins.digitalWritePin(DigitalPin.P13, 1);
       pins.digitalWritePin(DigitalPin.P4, 0);
       pins.digitalWritePin(DigitalPin.P14, 0);
