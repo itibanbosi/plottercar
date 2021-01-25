@@ -174,7 +174,7 @@ namespace eureka_plotter_car {
     }
   }
 
-  //% color="#3943c6" weight=71　blockId=plottercar_forward
+  //% color="#3943c6" weight=70　blockId=plottercar_forward
   //% block="（高精度）前へ |%F_cm| ｃｍ進む" group="3　基本の動き"
 
   export function plottercar_forward(F_cm: number): void {
@@ -480,7 +480,7 @@ namespace eureka_plotter_car {
     }
   }
 
-  //% color="#ff4940" weight=70　blockId=plottercar_rest
+  //% color="#ff4940" weight=71　blockId=plottercar_rest
   //% block="停止状態（電流ＯＦＦ）" group="3　基本の動き"
   export function plottercar_frest(): void {
     led.enable(false);
