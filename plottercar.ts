@@ -25,7 +25,7 @@ let cond_Distance=1;
 let cond_degree=1;
 
 
-//% color="#3943c6" block="ﾌﾟﾛｯﾀｰ・ｶｰVer0.98" icon="\uf1b9"
+//% color="#3943c6" block="ﾌﾟﾛｯﾀｰ・ｶｰVer1.0" icon="\uf1b9"
 
 namespace eureka_plotter_car {
 
