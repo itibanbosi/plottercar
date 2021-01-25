@@ -120,6 +120,65 @@ namespace eureka_plotter_car {
   }
 
 
+  //% color="#3943c6" weight=71　blockId=plottercar_1sou_back
+  //% block="後ろへ |%F_cm| ｃｍ進む" group="3　基本の動き"
+    export function plottercar_1sou_back(F_cm: number): void {
+    led.enable(false);
+    let i=0;
+    for (let index = 0; index < (F_cm / (18.9*cond_Distance) * 512); index++) {
+
+      pins.digitalWritePin(DigitalPin.P3, 1);
+      pins.digitalWritePin(DigitalPin.P13, 0);
+      pins.digitalWritePin(DigitalPin.P4, 0);
+      pins.digitalWritePin(DigitalPin.P14, 0);
+      pins.digitalWritePin(DigitalPin.P6, 0);
+      pins.digitalWritePin(DigitalPin.P15, 0);
+      pins.digitalWritePin(DigitalPin.P7, 0);
+      pins.digitalWritePin(DigitalPin.P16, 1);
+      for (i = 0; i < 1000; i++);
+      {
+      }
+      pins.digitalWritePin(DigitalPin.P3, 0);
+      pins.digitalWritePin(DigitalPin.P13, 0);
+      pins.digitalWritePin(DigitalPin.P4, 1);
+      pins.digitalWritePin(DigitalPin.P14, 0);
+      pins.digitalWritePin(DigitalPin.P6, 0);
+      pins.digitalWritePin(DigitalPin.P15, 1);
+      pins.digitalWritePin(DigitalPin.P7, 0);
+      pins.digitalWritePin(DigitalPin.P16, 0);
+      for (i = 0; i < 1000; i++);
+      {
+      }
+      pins.digitalWritePin(DigitalPin.P3, 0);
+      pins.digitalWritePin(DigitalPin.P13, 0);
+      pins.digitalWritePin(DigitalPin.P4, 0);
+      pins.digitalWritePin(DigitalPin.P14, 1);
+      pins.digitalWritePin(DigitalPin.P6, 1);
+      pins.digitalWritePin(DigitalPin.P15, 0);
+      pins.digitalWritePin(DigitalPin.P7, 0);
+      pins.digitalWritePin(DigitalPin.P16, 0);
+      for (i = 0; i < 1000; i++);
+      {
+      }
+        pins.digitalWritePin(DigitalPin.P3, 0);
+      pins.digitalWritePin(DigitalPin.P13, 1);
+      pins.digitalWritePin(DigitalPin.P4, 0);
+      pins.digitalWritePin(DigitalPin.P14, 0);
+      pins.digitalWritePin(DigitalPin.P6, 0);
+      pins.digitalWritePin(DigitalPin.P15, 0);
+      pins.digitalWritePin(DigitalPin.P7, 1);
+      pins.digitalWritePin(DigitalPin.P16, 0);
+      for (i = 0; i < 1000; i++);
+      {
+      }    
+    }
+  }
+
+
+
+
+
+
 
   //% color="#3943c6" weight=71　blockId=plottercar_forward
   //% block="（高精度）前へ |%F_cm| ｃｍ進む" group="3　基本の動き"
@@ -225,7 +284,7 @@ namespace eureka_plotter_car {
 
 
   //% color="#3943c6" weight=69　blockId=plottercar_back
-  //% block="後へ |%F_cm| ｃｍ進む" group="3　基本の動き"
+  //% block="（高精度）後へ |%F_cm| ｃｍ進む" group="3　基本の動き"
 
   export function plottercar_back(F_cm: number): void {
     led.enable(false);
