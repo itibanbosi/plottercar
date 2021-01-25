@@ -66,7 +66,7 @@ namespace eureka_plotter_car {
     }
   }
 
-  //% color="#3943c6" weight=72　blockId=plottercar_1sou_forward
+  //% color="#3943c6" weight=80　blockId=plottercar_1sou_forward
   //% block="前へ |%F_cm| ｃｍ進む" group="3　基本の動き"
     export function plottercar_1sou_forward(F_cm: number): void {
     led.enable(false);
@@ -120,7 +120,7 @@ namespace eureka_plotter_car {
   }
 
 
-  //% color="#3943c6" weight=71　blockId=plottercar_1sou_back
+  //% color="#3943c6" weight=78　blockId=plottercar_1sou_back
   //% block="後ろへ |%F_cm| ｃｍ進む" group="3　基本の動き"
     export function plottercar_1sou_back(F_cm: number): void {
     led.enable(false);
@@ -173,12 +173,6 @@ namespace eureka_plotter_car {
       }    
     }
   }
-
-
-
-
-
-
 
   //% color="#3943c6" weight=71　blockId=plottercar_forward
   //% block="（高精度）前へ |%F_cm| ｃｍ進む" group="3　基本の動き"
@@ -386,7 +380,7 @@ namespace eureka_plotter_car {
 
 
 
-  //% color="#3943c6" weight=66　blockId=plottercar_L_cycle
+  //% color="#3943c6" weight=76　blockId=plottercar_L_cycle
   //% block="左回り　角度 |%L_degree| " group="3　基本の動き"
 
   export function plottercar_L_cycle(L_degree: number): void {
@@ -486,7 +480,7 @@ namespace eureka_plotter_car {
     }
   }
 
-  //% color="#ff4940" weight=80　blockId=plottercar_rest
+  //% color="#ff4940" weight=70　blockId=plottercar_rest
   //% block="停止状態（電流ＯＦＦ）" group="3　基本の動き"
   export function plottercar_frest(): void {
     led.enable(false);
@@ -501,7 +495,7 @@ namespace eureka_plotter_car {
     pins.digitalWritePin(DigitalPin.P16, 0);
   }
 
-  //% color="#3943c6" weight=64　blockId=plottercar_R_cycle
+  //% color="#3943c6" weight=74　blockId=plottercar_R_cycle
   //% block="右回り　角度 |%R_degree| " group="3　基本の動き"
 
   export function plottercar_R_cycle(R_degree: number): void {
@@ -893,7 +887,7 @@ namespace eureka_plotter_car {
   }
 
 
-  //% color="#3943c6" weight=28　blockId=plottercar_houkou
+  //% color="#3943c6" weight=72　blockId=plottercar_houkou
   //% block="ほうこうを変える |%muki| へ " group="3　基本の動き"
     export function plottercar_houkou(muki: houkou): void {
         switch(muki){
