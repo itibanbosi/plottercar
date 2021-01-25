@@ -41,7 +41,7 @@ namespace eureka_plotter_car {
   }
 
   //% color="#ffa800" weight=99　blockId=plotter_Distance
-  //% block="進行距離調整(1→1/1000)  短く進む |%Dis| 長く進む" group="1　調整"
+  //% block="進行距離調整(1→1/1000)  短く |%Dis| 長く" group="1　調整"
   //% Dis.min=-30 Dis.max=30
   export function plotter_Distance(Dis: number): void {
     cond_Distance = (1+Dis/1000);
@@ -80,7 +80,7 @@ namespace eureka_plotter_car {
       pins.digitalWritePin(DigitalPin.P15, 0);
       pins.digitalWritePin(DigitalPin.P7, 1);
       pins.digitalWritePin(DigitalPin.P16, 0);
-      for (i = 0; i < 1000; i++);
+      for (i = 0; i < 800; i++);
       {
       }
       pins.digitalWritePin(DigitalPin.P3, 0);
@@ -91,7 +91,7 @@ namespace eureka_plotter_car {
       pins.digitalWritePin(DigitalPin.P15, 0);
       pins.digitalWritePin(DigitalPin.P7, 0);
       pins.digitalWritePin(DigitalPin.P16, 0);
-      for (i = 0; i < 1000; i++);
+      for (i = 0; i < 800; i++);
       {
       }
       pins.digitalWritePin(DigitalPin.P3, 0);
@@ -102,7 +102,7 @@ namespace eureka_plotter_car {
       pins.digitalWritePin(DigitalPin.P15, 1);
       pins.digitalWritePin(DigitalPin.P7, 0);
       pins.digitalWritePin(DigitalPin.P16, 0);
-      for (i = 0; i < 1000; i++);
+      for (i = 0; i < 800; i++);
       {
       }
       pins.digitalWritePin(DigitalPin.P3, 1);
@@ -113,7 +113,7 @@ namespace eureka_plotter_car {
       pins.digitalWritePin(DigitalPin.P15, 0);
       pins.digitalWritePin(DigitalPin.P7, 0);
       pins.digitalWritePin(DigitalPin.P16, 1);
-      for (i = 0; i < 1000; i++);
+      for (i = 0; i < 800; i++);
       {
       }
     }
