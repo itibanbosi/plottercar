@@ -216,10 +216,6 @@ namespace eureka_plotter_car {
       for (i = 0; i < 900; i++);
       {
       }    
-
-
-
-
     }
   }
 
