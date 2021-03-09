@@ -19,7 +19,7 @@ enum houkou {
     ななめ左,
 }
 
-enum microbit_version{
+enum microbit_version {
     Version1,
     Version2,
     }
@@ -28,8 +28,7 @@ enum microbit_version{
 let cond_Distance=1;
 let cond_degree=1;
 let microbit_wait=900;
-let microbit_1=900;
-let microbit_2=2000;
+
 
 
 //% color="#3943c6" block="ﾌﾟﾛｯﾀｰ・ｶｰVer1.0" icon="\uf1b9"
@@ -47,7 +46,16 @@ namespace eureka_plotter_car {
     }
   }
 
-
+  //% color="#ff3d03" weight=90 blockId=Microbit_Version_info block="ﾏｲｸﾛﾋﾞｯﾄのバージョンを設定する |%Version_info| にする" group="1 初期設定"
+  export function microbit_version_info(Version_info : microbit_version) {
+    switch(Version_info){
+        case microbit_version.Version1:
+        microbit_wait=900;
+        break;
+        case microbit_version.Version2:
+        microbit_wait=2000;
+    }
+  }
 
   //% color="#009CA0" weight=96 blockId=eureka_relay block="ペン |%mode| " group="2 ペンの状態"
   export function plottercar_pen(mode: pen_onoff) {
