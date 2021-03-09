@@ -19,10 +19,16 @@ enum houkou {
     ななめ左,
 }
 
+enum microbit_version{
+    Version1,
+    Version2,
+    }
 
 
 let cond_Distance=1;
 let cond_degree=1;
+let wait_time1=900;
+let wait_time2=2000;
 
 
 //% color="#3943c6" block="ﾌﾟﾛｯﾀｰ・ｶｰVer1.0" icon="\uf1b9"
