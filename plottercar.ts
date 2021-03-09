@@ -1,7 +1,7 @@
 let wait = 0;
 enum pen_onoff {
-  下げる,
-  上げる,
+  up,
+  down,
 }
 enum plotter_houkou {
     前,
@@ -59,11 +59,11 @@ namespace eureka_plotter_car {
 
   //% color="#009CA0" weight=96 blockId=eureka_relay block="ペン |%mode| " group="2 ペンの状態"
   export function plottercar_pen(mode: pen_onoff) {
-    if (mode == pen_onoff.下げる) {
+    if (mode == pen_onoff.down) {
       pins.servoWritePin(AnalogPin.P8, 0);
       basic.pause(1000);
     }
-    if (mode == pen_onoff.上げる) {
+    if (mode == pen_onoff.up) {
       pins.servoWritePin(AnalogPin.P8, 90);
       basic.pause(100);
     }
