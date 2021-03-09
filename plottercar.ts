@@ -31,7 +31,7 @@ let microbit_wait=900;
 
 
 
-//% color="#3943c6" block="ﾌﾟﾛｯﾀｰ・ｶｰVer1.0" icon="\uf1b9"
+//% color="#3943c6" block="ﾌﾟﾛｯﾀｰ・ｶｰVer1.2" icon="\uf1b9"
 
 namespace eureka_plotter_car {
 
