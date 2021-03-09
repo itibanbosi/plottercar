@@ -297,7 +297,7 @@ namespace eureka_plotter_car {
 
 
   //% color="#3943c6" weight=55　blockId=plottercar_R_step
-  //% block="右車輪　 |%R_step|ステップ |%houkou|方向" group="3　基本の動き"
+  //% block="右車輪　 |%R_step|×4ステップ |%houkou|方向" group="3　基本の動き"
 
   export function plottercar_R_step(R_step: number,houkou:plotter_houkou): void {
     led.enable(false);
@@ -376,7 +376,7 @@ namespace eureka_plotter_car {
 }
 
   //% color="#3943c6" weight=58　blockId=plottercar_L_step
-  //% block="左車輪　 |%L_step|ステップ |%houkou|方向" group="3　基本の動き"
+  //% block="左車輪　 |%L_step|×4ステップ |%houkou|方向" group="3　基本の動き"
 
   export function plottercar_L_step(L_step: number,houkou:plotter_houkou): void {
     led.enable(false);
